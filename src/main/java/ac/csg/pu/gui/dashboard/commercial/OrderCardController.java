@@ -44,10 +44,10 @@ public class OrderCardController {
 
         for (OrderItem item : order.getItems()) {
             Label itemLabel = new Label(
-                item.productName() + " x" + item.quantity() + " - £" + String.format("%.2f", item.getTotalPrice())
+                item.productName() + " x" + item.quantity() + " - £" + String.format("%.2f", item.totalPrice())
             );
             itemLabel.getStyleClass().add("order-item-label");
-            total += item.getTotalPrice();
+            total += item.totalPrice();
             itemsBox.getChildren().add(itemLabel);
             logger.info("Rendering product: {}", item.productName());
         }
