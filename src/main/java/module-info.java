@@ -5,6 +5,7 @@ module ac.csg.pu {
     // Logging
     requires org.slf4j;
     requires org.apache.pdfbox;
+    requires org.apache.commons.logging;
     // SQL
     requires java.sql;
     requires io.javalin;

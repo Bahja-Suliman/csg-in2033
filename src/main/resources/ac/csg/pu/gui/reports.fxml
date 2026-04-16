@@ -26,15 +26,14 @@
         <Button text="Generate Report" onAction="#onGenerate"/>
         <Button text="Export PDF" onAction="#onExport"/>
     </HBox>
-
-    <TableView fx:id="reportTable">
+    <TableView fx:id="reportTable" prefWidth="800.0">
         <columns>
-            <TableColumn fx:id="productIdColumn" text="Product ID" />
-            <TableColumn fx:id="productNameColumn" text="Product Name" />
-            <TableColumn fx:id="unitPriceColumn" text="Unit Price" />
-            <TableColumn fx:id="purchasePriceColumn" text="Purchase Price" />
-            <TableColumn fx:id="quantityColumn" text="Quantity" />
-            <TableColumn fx:id="totalColumn" text="Total" />
+            <TableColumn fx:id="productIdColumn" text="Product ID" prefWidth="100.0"/>
+            <TableColumn fx:id="productNameColumn" text="Product Name" prefWidth="180.0"/>
+            <TableColumn fx:id="unitPriceColumn" text="Unit Price" prefWidth="150.0"/>
+            <TableColumn fx:id="purchasePriceColumn" text="Purchase Price" prefWidth="200.0"/>
+            <TableColumn fx:id="quantityColumn" text="Quantity" prefWidth="100.0"/>
+            <TableColumn fx:id="totalColumn" text="Total" prefWidth="120.0"/>
         </columns>
     </TableView>
 
